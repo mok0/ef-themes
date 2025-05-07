@@ -86,6 +86,7 @@
       (cyan-cooler     "#1dbfcf")
       (cyan-faint      "#8aa0df")
 
+
 ;;; Basic hues for background values
 
       (bg-red-intense     "#b02930")
@@ -222,7 +223,8 @@
 
 ;;;; Prose mappings
 
-      (prose-code cyan-cooler)
+      ;;(prose-code cyan-cooler)
+      (prose-code "#24d8a5")
       (prose-done green)
       (prose-macro green-warmer)
       (prose-metadata fg-dim)
