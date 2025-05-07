@@ -74,6 +74,7 @@
     ef-reverie
     ef-spring
     ef-summer
+    ef-test
     ef-trio-light
     ef-tritanopia-light)
   "List of symbols with the light Ef themes.")
@@ -681,9 +682,9 @@ Run `ef-themes-post-load-hook' after loading the theme."
   (if-let* ((themes (ef-themes--toggle-theme-p))
             (one (car themes))
             (two (cadr themes)))
-      (if (eq (car custom-enabled-themes) one)
-          (ef-themes-load-theme two)
-        (ef-themes-load-theme one))
+      (message "%s" (if (eq (car custom-enabled-themes) one)
+         (ef-themes-load-theme two)
+        (ef-themes-load-theme one)))  ; mok
     (ef-themes-load-theme
      (ef-themes--select-prompt
       (concat "Set two `ef-themes-to-toggle'; "
