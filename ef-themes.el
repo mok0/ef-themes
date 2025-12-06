@@ -2193,7 +2193,7 @@ text should not be underlined as well) yet still blend in."
     `(org-modern-priority ((,c :background ,bg-main :foreground ,prose-tag )))
     `(org-modern-tag ((,c :background ,bg-main :foreground ,prose-tag )))
     `(org-modern-habit ((,c :background ,bg-graph-green-0 :foreground ,"black")))
-    `(org-modern-horizontal-rule ((,c :background ,bg-main )))
+    `(org-modern-horizontal-rule ((,c :background ,bg-main :foreground ,fg-main)))
     ;; WIP
     ;;`(org-modern-symbol ((,c :background ,bg-main :foreground ,prose-done )))
     ;;`(org-modern-label ((,c :background ,bg-main :foreground ,prose-done )))
