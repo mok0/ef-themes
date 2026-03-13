@@ -271,6 +271,7 @@ further details)."
    nil
    (append ef-smyx-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-smyx
  'ef-themes
@@ -278,7 +279,6 @@ further details)."
  'dark
  'ef-smyx-palette
  nil
- 'ef-smyx-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-smyx-palette-overrides)
 
 ;;; ef-smyx-theme.el ends here
