@@ -44,7 +44,7 @@
     (fg-dim "#908890")
     (fg-alt "#afdacf")
     (bg-active "#564f55")
-    (bg-inactive "#1c1719")
+    (bg-inactive "#2c2729")
     (border "#605760")
 
     (red "#f48359")
@@ -194,10 +194,10 @@
     (rainbow-2 green-cooler)
     (rainbow-3 magenta)
     (rainbow-4 cyan)
-    (rainbow-5 green-warmer)
+    (rainbow-5 yellow-cooler)
     (rainbow-6 magenta-cooler)
     (rainbow-7 cyan-warmer)
-    (rainbow-8 yellow-cooler)))
+    (rainbow-8 green-warmer)))
 
 (defcustom ef-trio-dark-palette-overrides nil
   "Overrides for `ef-trio-dark-palette'.
@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-trio-dark-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-trio-dark
  'ef-themes
@@ -230,7 +231,6 @@ further details)."
  'dark
  'ef-trio-dark-palette
  nil
- 'ef-trio-dark-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-trio-dark-palette-overrides)
 
 ;;; ef-trio-dark-theme.el ends here

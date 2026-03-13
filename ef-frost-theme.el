@@ -44,7 +44,7 @@
     (fg-dim "#66657f")
     (fg-alt "#204f9a")
     (bg-active "#b5b8b8")
-    (bg-inactive "#f7f9f9")
+    (bg-inactive "#ecf0f0")
     (border "#b0b7c0")
 
     (red "#c42d2f")
@@ -194,7 +194,7 @@
     (rainbow-2 green-cooler)
     (rainbow-3 magenta-cooler)
     (rainbow-4 cyan)
-    (rainbow-5 blue-warmer)
+    (rainbow-5 blue-cooler)
     (rainbow-6 green-warmer)
     (rainbow-7 magenta)
     (rainbow-8 cyan-warmer)))
@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-frost-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-frost
  'ef-themes
@@ -230,7 +231,6 @@ further details)."
  'light
  'ef-frost-palette
  nil
- 'ef-frost-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-frost-palette-overrides)
 
 ;;; ef-frost-theme.el ends here

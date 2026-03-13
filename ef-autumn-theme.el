@@ -44,7 +44,7 @@
     (fg-dim "#887c8a")
     (fg-alt "#70a89f")
     (bg-active "#56524f")
-    (bg-inactive "#15140d")
+    (bg-inactive "#25241d")
     (border "#58514f")
 
     (red "#ef656a")
@@ -194,9 +194,9 @@
     (rainbow-2 red)
     (rainbow-3 cyan-cooler)
     (rainbow-4 yellow-cooler)
-    (rainbow-5 blue)
+    (rainbow-5 green)
     (rainbow-6 red-cooler)
-    (rainbow-7 green)
+    (rainbow-7 blue-warmer)
     (rainbow-8 yellow)))
 
 (defcustom ef-autumn-palette-overrides nil
@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-autumn-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-autumn
  'ef-themes
@@ -230,7 +231,6 @@ further details)."
  'dark
  'ef-autumn-palette
  nil
- 'ef-autumn-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-autumn-palette-overrides)
 
 ;;; ef-autumn-theme.el ends here

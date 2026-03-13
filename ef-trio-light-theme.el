@@ -44,7 +44,7 @@
     (fg-dim "#786e74")
     (fg-alt "#3f7668")
     (bg-active "#c3c0c9")
-    (bg-inactive "#efeef7")
+    (bg-inactive "#e7e2eb")
     (border "#c6bac5")
 
     (red "#c3303a")
@@ -194,10 +194,10 @@
     (rainbow-2 green-cooler)
     (rainbow-3 magenta)
     (rainbow-4 cyan)
-    (rainbow-5 green-warmer)
+    (rainbow-5 yellow-cooler)
     (rainbow-6 magenta-cooler)
     (rainbow-7 cyan-warmer)
-    (rainbow-8 yellow-cooler)))
+    (rainbow-8 green-warmer)))
 
 (defcustom ef-trio-light-palette-overrides nil
   "Overrides for `ef-trio-light-palette'.
@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-trio-light-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-trio-light
  'ef-themes
@@ -230,7 +231,6 @@ further details)."
  'light
  'ef-trio-light-palette
  nil
- 'ef-trio-light-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-trio-light-palette-overrides)
 
 ;;; ef-trio-light-theme.el ends here

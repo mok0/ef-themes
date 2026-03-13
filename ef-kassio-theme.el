@@ -44,7 +44,7 @@
     (fg-dim "#776f79")
     (fg-alt "#af4988")
     (bg-active "#c0bbbb")
-    (bg-inactive "#f9eff3")
+    (bg-inactive "#f0e3e7")
     (border "#bab7bc")
 
     (red "#b00234")
@@ -194,8 +194,8 @@
     (rainbow-2 cyan)
     (rainbow-3 yellow-cooler)
     (rainbow-4 magenta-cooler)
-    (rainbow-5 magenta-warmer)
-    (rainbow-6 red-cooler)
+    (rainbow-5 red-cooler)
+    (rainbow-6 magenta-warmer)
     (rainbow-7 cyan-cooler)
     (rainbow-8 green-cooler)))
 
@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-kassio-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-kassio
  'ef-themes
@@ -230,7 +231,6 @@ further details)."
  'light
  'ef-kassio-palette
  nil
- 'ef-kassio-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-kassio-palette-overrides)
 
 ;;; ef-kassio-theme.el ends here

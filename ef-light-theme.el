@@ -44,7 +44,7 @@
     (fg-dim "#68759f")
     (fg-alt "#397a70")
     (bg-active "#b3b3b3")
-    (bg-inactive "#f9f9f9")
+    (bg-inactive "#f0f0f0")
     (border "#bfc4da")
 
     (red "#d3303a")
@@ -194,9 +194,9 @@
     (rainbow-2 magenta)
     (rainbow-3 cyan-cooler)
     (rainbow-4 yellow-cooler)
-    (rainbow-5 magenta-cooler)
-    (rainbow-6 red-cooler)
-    (rainbow-7 green-cooler)
+    (rainbow-5 blue-warmer)
+    (rainbow-6 green-cooler)
+    (rainbow-7 magenta-cooler)
     (rainbow-8 yellow)))
 
 (defcustom ef-light-palette-overrides nil
@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-light-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-light
  'ef-themes
@@ -230,7 +231,6 @@ further details)."
  'light
  'ef-light-palette
  nil
- 'ef-light-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-light-palette-overrides)
 
 ;;; ef-light-theme.el ends here

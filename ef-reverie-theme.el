@@ -44,7 +44,7 @@
     (fg-dim "#6f6877")
     (fg-alt "#55447f")
     (bg-active "#b9aaa8")
-    (bg-inactive "#ede4da")
+    (bg-inactive "#e4dad7")
     (border "#c5afb6")
 
     (red "#ba2d2f")
@@ -194,7 +194,7 @@
     (rainbow-2 blue-warmer)
     (rainbow-3 red-cooler)
     (rainbow-4 magenta-cooler)
-    (rainbow-5 green-cooler)
+    (rainbow-5 yellow-warmer)
     (rainbow-6 cyan)
     (rainbow-7 yellow)
     (rainbow-8 red-faint)))
@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-reverie-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-reverie
  'ef-themes
@@ -230,7 +231,6 @@ further details)."
  'light
  'ef-reverie-palette
  nil
- 'ef-reverie-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-reverie-palette-overrides)
 
 ;;; ef-reverie-theme.el ends here
