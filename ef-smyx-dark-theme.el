@@ -1,4 +1,4 @@
-;;; ef-smyx-theme.el --- Legible dark theme with orange, cyan, green, blue colors. -*- lexical-binding:t -*-
+;;; ef-smyx-dark-theme.el --- Legible dark theme with orange, cyan, green, blue colors. -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022-2025  Free Software Foundation, Inc.
 
@@ -35,7 +35,7 @@
 
 (require 'ef-themes)
 
-(defconst ef-smyx-palette-partial
+(defconst ef-smyx-dark-palette-partial
   '((cursor "#f0af7f")
     (bg-main "#060606")
     (bg-dim "#221920")
@@ -122,7 +122,7 @@
     (bg-region "#282b3d")
     ))
 
-(defconst ef-smyx-palette-mappings-partial
+(defconst ef-smyx-dark-palette-mappings-partial
   '((err red-warmer)
     (warning yellow)
     (info green)
@@ -209,8 +209,8 @@
     (rainbow-8 orange-warmer)
     ))
 
-(defcustom ef-smyx-palette-overrides nil
-  "Overrides for `ef-smyx-palette'.
+(defcustom ef-smyx-dark-palette-overrides nil
+  "Overrides for `ef-smyx-dark-palette'.
 
 Mirror the elements of the aforementioned palette, overriding
 their value.
@@ -226,21 +226,21 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-(defconst ef-smyx-palette
+(defconst ef-smyx-dark-palette
   (modus-themes-generate-palette
-   ef-smyx-palette-partial
+   ef-smyx-dark-palette-partial
    nil
    nil
-   (append ef-smyx-palette-mappings-partial ef-themes-palette-common)))
+   (append ef-smyx-dark-palette-mappings-partial ef-themes-palette-common)))
 
 ;;;###theme-autoload
 (modus-themes-theme
- 'ef-smyx
+ 'ef-smyx-dark
  'ef-themes
  "Legible dark green-orange theme with orange, cyan, green, blue colors."
  'dark
- 'ef-smyx-palette
+ 'ef-smyx-dark-palette
  nil
- 'ef-smyx-palette-overrides)
+ 'ef-smyx-dark-palette-overrides)
 
-;;; ef-smyx-theme.el ends here
+;;; ef-smyx-dark-theme.el ends here
