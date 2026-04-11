@@ -78,8 +78,6 @@
     (cyan-cooler "#1dbfcf")
     (cyan-faint "#8aa0df")
 
-    (gray57 "#919191")
-
     (bg-red-intense "#b02930")
     (bg-green-intense "#4a7100")
     (bg-yellow-intense "#8f5040")
@@ -120,6 +118,22 @@
     (bg-warning "#3a3104") ; check with warning
     (bg-info "#163505") ; check with info
     (bg-region "#282b3d")
+
+    ;; for code
+    (fg-builtin      "#ffa500")
+    (fg-comment      "#857f8f")
+    (fg-constant     "#ff7355")
+    (fg-fnname       "#96d9f1")
+    (fg-fnname-call  "#8aa0df")
+    (fg-keyword      "#d1fa71")
+    (fg-preprocessor "#919191")
+    (fg-docstring    "#857f8f")
+    (fg-string       "#f6dc69")
+    (fg-type         "#afeeee")
+    (fg-variable     "#96d9f1")
+    (fg-variable-use "#7a94df")
+    (fg-rx-backslash "#00a692") ; compare with `string'
+    (fg-rx-construct "#ef6360")
     ))
 
 (defconst ef-smyx-dark-palette-mappings-partial
@@ -134,20 +148,20 @@
     (identifier yellow-faint)
     (fg-prompt cyan)
 
-    (builtin orange-warmer)
-    (comment fg-dim)
-    (constant red-warmer)
-    (fnname cyan)
-    (fnname-call cyan-faint)
-    (keyword green-faint)
-    (preprocessor gray57)
-    (docstring fg-dim)
-    (string yellow-faint)
-    (type cyan-warmer)
-    (variable blue-light)
-    (variable-use blue-faint)
-    (rx-backslash green-cooler) ; compare with `string'
-    (rx-construct red)
+    (builtin fg-builtin)
+    (comment fg-comment)
+    (constant fg-constant)
+    (fnname fg-fnname)
+    (fnname-call fg-fn-call)
+    (keyword fg-keyword)
+    (preprocessor fg-preprocessor)
+    (docstring fg-docstring)
+    (string fg-string)
+    (type fg-type)
+    (variable fg-variable)
+    (variable-use fg-variable-use)
+    (rx-backslash fg-rx-backslash) ; compare with `string'
+    (rx-construct fg-rx-construct)
 
     (accent-0 cyan)
     (accent-1 yellow-warmer)
