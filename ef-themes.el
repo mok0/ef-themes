@@ -77,6 +77,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     ef-melissa-light
     ef-orange
     ef-reverie
+    ef-smyx-light
     ef-spring
     ef-summer
     ef-trio-light
@@ -145,6 +146,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     (ef-reverie ef-themes "Legible light cream theme with gold and nuanced colors." light ef-reverie-palette nil ef-reverie-palette-overrides)
     (ef-rosa ef-themes "Legible dark rosewood theme with magenta and green colors." dark ef-rosa-palette nil ef-rosa-palette-overrides)
     (ef-smyx-dark ef-themes "Legible dark theme with orange, cyan, green, blue colors." dark ef-smyx-dark-palette nil ef-smyx-dark-palette-overrides)
+    (ef-smyx-light ef-themes "Legible light theme with orange, cyan, green, blue colors." light ef-smyx-light-palette nil ef-smyx-light-palette-overrides)
     (ef-spring ef-themes "Legible light floral theme with cool, varied colors (green, cyan, red)." light ef-spring-palette nil ef-spring-palette-overrides)
     (ef-summer ef-themes "Legible light warm pink theme with magenta, purple, gold, cyan colors." light ef-summer-palette nil ef-summer-palette-overrides)
     (ef-symbiosis ef-themes "Legible dark brown-black theme with blue, green, cyan, gold colors." dark ef-symbiosis-palette nil ef-symbiosis-palette-overrides)
