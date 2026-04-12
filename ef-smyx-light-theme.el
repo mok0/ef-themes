@@ -113,7 +113,7 @@
     (bg-mode-line-active "#2c6c12")
     (fg-mode-line-active "#ffffe0")
     (bg-completion "#b0ff9d") ;; pastelgreen
-    (bg-hover "#5471ba")
+    (bg-hover "#d2f6c4")
     (bg-hover-secondary "#a06c64")
     (bg-hl-line "#96d9f1")
     (bg-paren-match "#c5fff3")
