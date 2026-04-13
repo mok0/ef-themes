@@ -60,7 +60,7 @@
     (green-warmer "#6aad0f")
     (green-cooler "#00a692")
     (green-faint "#4a8e00")
-    (green-light "#24d8a5")
+    (green-light "#1ea810")
     (yellow "#ffe523")
     (yellow-warmer "#ffd500")
     (yellow-cooler "#e4d00a")
@@ -84,7 +84,7 @@
     (bg-red-intense "#ff8f88")
     (bg-green-intense "#4a7100")
     (bg-yellow-intense "#efbf00")
-    (bg-blue-intense "#4648d0")
+    (bg-blue-intense "#cbccf1")
     (bg-magenta-intense "#da4fdf")
     (bg-cyan-intense "#66cfd0")
 
