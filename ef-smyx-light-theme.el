@@ -123,25 +123,24 @@
     (bg-region "#e0e3f0")
 
     ;; for code
-    (fg-builtin      "#cc8800")
-    (fg-comment      "#597a5f")
-    (fg-constant     "#dd1100")
-    (fg-name         "#388004")
-    (fg-fnname-call  "#00688b")
-    (fg-keyword      "#4a8e00")
-    (fg-preprocessor "#919191")
-    (fg-docstring    "#59786f")
-    (fg-string       "#ee6600")
-    (fg-type         "#00a1d7")
-    (fg-variable     "#126a8a")
-    (fg-variable-use "#7a94df") ;
-    (fg-rx-backslash "#00a692") ; compare with `string'
-    (fg-rx-construct "#ef6360")
+    (fg-code-builtin      "#cc8800")
+    (fg-code-comment      "#597a5f")
+    (fg-code-constant     "#dd1100")
+    (fg-code-fnname       "#388004")
+    (fg-code-fnname-call  "#00688b")
+    (fg-code-keyword      "#4a8e00")
+    (fg-code-preprocessor "#919191")
+    (fg-code-docstring    "#59786f")
+    (fg-code-string       "#ee6600")
+    (fg-code-type         "#00a1d7")
+    (fg-code-variable     "#126a8a")
+    (fg-code-variable-use "#7a94df") ;
+    (fg-code-rx-backslash "#00a692") ; compare with `string'
+    (fg-code-rx-construct "#ef6360")
     ))
 
 (defconst ef-smyx-light-palette-mappings-partial
   '((err red-warmer)
-    ;;(warning yellow-warmer)
     (warning yellow-warmer)
     (info green)
 
@@ -152,20 +151,20 @@
     (identifier yellow-faint)
     (fg-prompt cyan)
 
-    (builtin fg-builtin)
-    (comment fg-comment)
-    (constant fg-constant)
-    (fnname fg-fnname)
-    (fnname-call fg-fnname-call)
-    (keyword fn-keyword)
-    (preprocessor fg-preprocessor)
-    (docstring fg-docstring)
-    (string fg-string)
-    (type fg-type)
-    (variable fg-variable)
-    (variable-use fg-variable-use)
-    (rx-backslash fg-rx-backslash) ; compare with `string'
-    (rx-construct fg-rx-construct)
+    (builtin fg-code-builtin)
+    (comment fg-code-comment)
+    (constant fg-code-constant)
+    (fnname fg-code-fnname)
+    (fnname-call fg-code-fnname-call)
+    (keyword fn-code-keyword)
+    (preprocessor fg-code-preprocessor)
+    (docstring fg-code-docstring)
+    (string fg-code-string)
+    (type fg-code-type)
+    (variable fg-code-variable)
+    (variable-use fg-code-variable-use)
+    (rx-backslash fg-code-rx-backslash) ;; compare with `string'
+    (rx-construct fg-code-rx-construct)
 
     (accent-0 cyan)
     (accent-1 yellow-warmer)
