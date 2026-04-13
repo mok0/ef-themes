@@ -36,46 +36,52 @@
 (require 'ef-themes)
 
 (defconst ef-smyx-light-palette-partial
-  '((cursor "#ffa500")
-    (bg-main "#fffaf0")  ;; floralwhite
-    (bg-dim "#f0ece0")
-    (bg-alt "#c4d7f7")
-    (fg-main "#242521")
-    (fg-dim "#59786f")
-    (fg-alt "#7f475a")
-    (fg-active "#4b3f47")
+  '((cursor      "#ffa500")
+    (bg-main     "#f7f7f7")
+    (bg-dim      "#f0ece0")
+    (bg-alt      "#c4d7f7")
+    (fg-main     "#242521")
+    (fg-dim      "#59786f")
+    (fg-alt      "#7f475a")
+    (fg-active   "#4b3f47")
     (fg-inactive "#191317")
-    (bg-active "#c5c3b8")
+    (bg-active   "#c5c3b8")
     (bg-inactive "#eee7e0")
-    (border "#c4c0b6")
+    (border      "#c4c0b6")
 
     (red "#ef6360")
     (red-warmer "#c10")
     (red-cooler "#fe5a7a")
     (red-faint "#d56f72")
+
     (orange "#ee6600")
     (orange-warmer "#cc8800")
     (orange-dark "#c04e01")
+
     (green "#0faa26")
     (green-warmer "#6aad0f")
     (green-cooler "#00a692")
     (green-faint "#4a8e00")
     (green-light "#1ea810")
+
     (yellow "#ffe523")
     (yellow-warmer "#ffd500")
     (yellow-cooler "#e4d00a")
-    ;;(yellow-faint "#ffe523")
+    (yellow-faint "#ffe523")
     (yellow-faint "#ffab0a")
+
     (blue "#3f95f6")
     (blue-warmer "#6a9fff")
     (blue-cooler "#029fff")
     (blue-faint "#7a94df")
     (blue-light "#126a8a")
     (blue-dark "#214761")
+
     (magenta "#d369af")
     (magenta-warmer "#e580ea")
     (magenta-cooler "#af85ff")
     (magenta-faint "#c58faf")
+
     (cyan "#78aaff")
     (cyan-warmer "#00a1d7")
     (cyan-cooler "#148691")
@@ -114,7 +120,7 @@
     (fg-mode-line-active "#ffffe0")
     (bg-completion "#b0ff9d") ;; pastelgreen
     (bg-hover "#d2f6c4")
-    (bg-hover-secondary "#a06c64")
+    (bg-hover-secondary "#afc0f0")  ;; org-modern tag?
     (bg-hl-line "#96d9f1")
     (bg-paren-match "#c5fff3")
     (bg-err "#f6beb3") ; check with err
@@ -190,7 +196,7 @@
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula warning)
-    (prose-tag magenta-faint)
+    (prose-tag bg-blue-subtle)  ;; used for org-mode tags
     (prose-todo red)
     (fg-prose-verbatim blue-warmer)
 
