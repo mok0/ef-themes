@@ -37,7 +37,7 @@
 
 (defconst ef-smyx-light-palette-partial
   '((cursor      "#ffa500")
-    (bg-main     "#f7f7f7")
+    (bg-main     "#fffaf0")  ;; floralwhite
     (bg-dim      "#f0ece0")
     (bg-alt      "#c4d7f7")
     (fg-main     "#242521")
@@ -49,84 +49,79 @@
     (bg-inactive "#eee7e0")
     (border      "#c4c0b6")
 
-    (red "#ef6360")
-    (red-warmer "#c10")
-    (red-cooler "#fe5a7a")
-    (red-faint "#d56f72")
-
-    (orange "#ee6600")
+    (red           "#ef6360")
+    (red-warmer    "#cc1100")
+    (red-cooler    "#fe5a7a")
+    (red-faint     "#d56f72")
+    (orange        "#ee6600")
     (orange-warmer "#cc8800")
-    (orange-dark "#c04e01")
-
-    (green "#0faa26")
-    (green-warmer "#6aad0f")
-    (green-cooler "#00a692")
-    (green-faint "#4a8e00")
-    (green-light "#1ea810")
-
-    (yellow "#ffe523")
+    (orange-dark   "#c04e01")
+    (green         "#0faa26")
+    (green-warmer  "#6aad0f")
+    (green-cooler  "#00a692")
+    (green-faint   "#4a8e00")
+    (green-light   "#24d8a5")
+    (yellow        "#ffe523")
     (yellow-warmer "#ffd500")
     (yellow-cooler "#e4d00a")
-    (yellow-faint "#ffe523")
-    (yellow-faint "#ffab0a")
-
-    (blue "#3f95f6")
-    (blue-warmer "#6a9fff")
-    (blue-cooler "#029fff")
-    (blue-faint "#7a94df")
-    (blue-light "#126a8a")
-    (blue-dark "#214761")
-
-    (magenta "#d369af")
+    (yellow-faint  "#ffe523")
+    (yellow-dark   "#ffab0a")
+    (blue          "#3f95f6")
+    (blue-warmer   "#6a9fff")
+    (blue-cooler   "#029fff")
+    (blue-faint    "#7a94df")
+    (blue-light    "#126a8a")
+    (blue-dark     "#214761")
+    (magenta        "#d369af")
     (magenta-warmer "#e580ea")
     (magenta-cooler "#af85ff")
-    (magenta-faint "#c58faf")
+    (magenta-faint  "#c58faf")
+    (cyan          "#78aaff")
+    (cyan-warmer   "#00a1d7")
+    (cyan-cooler   "#148691")
+    (cyan-faint    "#8aa0df")
 
-    (cyan "#78aaff")
-    (cyan-warmer "#00a1d7")
-    (cyan-cooler "#148691")
-    (cyan-faint "#8aa0df")
-
-    (bg-red-intense "#ff8f88")
-    (bg-green-intense "#4a7100")
-    (bg-yellow-intense "#efbf00")
-    (bg-blue-intense "#cbccf1")
+    (bg-red-intense     "#ff8f88")
+    (bg-green-intense   "#4a7100")
+    (bg-yellow-intense  "#efbf00")
+    (bg-blue-intense    "#4648d0")
     (bg-magenta-intense "#da4fdf")
-    (bg-cyan-intense "#66cfd0")
+    (bg-cyan-intense    "#66cfd0")
 
-    (bg-red-subtle "#ffc6bf")
-    (bg-green-subtle "#c4f2af")
-    (bg-yellow-subtle "#f0f07f")
-    (bg-blue-subtle "#c4d7f7")
+    (bg-red-subtle     "#ffc6bf")
+    (bg-green-subtle   "#c4f2af")
+    (bg-yellow-subtle  "#f0f07f")
+    (bg-blue-subtle    "#c4d7f7")
     (bg-magenta-subtle "#fad3ff")
-    (bg-cyan-subtle "#bfefff")
+    (bg-cyan-subtle    "#bfefff")
 
-    (bg-added "#a0e0a0")
-    (bg-added-faint "#c5ffa2")
+    (bg-added        "#a0e0a0")
+    (bg-added-faint  "#c5ffa2")
     (bg-added-refine "#add0ad")
-    (fg-added "#375e17")
+    (fg-added        "#375e17")
 
-    (bg-changed "#efef80")
-    (bg-changed-faint "#ffe7a2")
+    (bg-changed        "#efef80")
+    (bg-changed-faint  "#ffe7a2")
     (bg-changed-refine "#ffffa8")
-    (fg-changed "#363300")
+    (fg-changed        "#363300")
 
-    (bg-removed "#ffbfbf")
-    (bg-removed-faint "#f9dadd")
+    (bg-removed        "#ffbfbf")
+    (bg-removed-faint  "#f9dadd")
     (bg-removed-refine "#f2c3c6")
-    (fg-removed "#c62b4e")
+    (fg-removed        "#c62b4e")
 
     (bg-mode-line-active "#2c6c12")
     (fg-mode-line-active "#ffffe0")
-    (bg-completion "#b0ff9d") ;; pastelgreen
-    (bg-hover "#d2f6c4")
-    (bg-hover-secondary "#afc0f0")  ;; org-modern tag?
-    (bg-hl-line "#96d9f1")
-    (bg-paren-match "#c5fff3")
-    (bg-err "#f6beb3") ; check with err
-    (bg-warning "#f7e381") ; check with warning
-    (bg-info "#abf483") ; check with info
-    (bg-region "#e0e3f0")
+
+    (bg-completion       "#b0ff9d") ;; pastelgreen
+    (bg-hover            "#5471ba")
+    (bg-hover-secondary  "#a06c64")
+    (bg-hl-line          "#96d9f1")
+    (bg-paren-match      "#c5fff3")
+    (bg-err              "#f6beb3") ; check with err
+    (bg-warning          "#f7e381") ; check with warning
+    (bg-info             "#abf483") ; check with info
+    (bg-region           "#e0e3f0")
 
     ;; for code
     (fg-code-builtin      "#cc8800")
@@ -143,18 +138,20 @@
     (fg-code-variable-use "#7a94df") ;
     (fg-code-rx-backslash "#00a692") ; compare with `string'
     (fg-code-rx-construct "#ef6360")
+
+    (fg-prose-code "#178c6e")
     ))
 
 (defconst ef-smyx-light-palette-mappings-partial
   '((err red-warmer)
-    (warning yellow-warmer)
+    (warning yellow-dark)
     (info green)
 
     (fg-link cyan)
     (fg-link-visited magenta-cooler)
     (name blue)
     (keybind yellow-cooler)
-    (identifier yellow-faint)
+    (identifier yellow-dark)
     (fg-prompt cyan)
 
     (builtin fg-code-builtin)
@@ -185,11 +182,11 @@
     (date-now fg-main)
     (date-range fg-alt)
     (date-scheduled yellow)
-    (date-scheduled-subtle yellow-faint)
+    (date-scheduled-subtle yellow-dark)
     (date-weekday yellow-cooler)
     (date-weekend blue)
 
-    (fg-prose-code green-light)
+    ;;(fg-prose-code green-light) ;: defined with color above
     (prose-done green)
     (fg-prose-macro green-warmer)
     (prose-metadata fg-dim)
@@ -206,7 +203,7 @@
     (mail-cite-3 fg-dim)
     (mail-part cyan)
     (mail-recipient green-warmer)
-    (mail-subject yellow-faint)
+    (mail-subject yellow-dark)
     (mail-other blue-warmer)
 
     (bg-search-static bg-warning)
