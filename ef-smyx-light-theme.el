@@ -53,7 +53,7 @@
     (red-warmer    "#cc1100")
     (red-cooler    "#fe5a7a")
     (red-faint     "#d56f72")
-    (orange        "#ee6600")
+    (orange        "#ffa500")
     (orange-warmer "#cc8800")
     (orange-dark   "#c04e01")
     (green         "#0faa26")
@@ -170,7 +170,7 @@
     (rx-construct fg-code-rx-construct)
 
     (accent-0 cyan)
-    (accent-1 yellow-warmer)
+    (accent-1 orange)
     (accent-2 green-warmer)
     (accent-3 magenta-cooler)
 
