@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2022-2025  Free Software Foundation, Inc.
 
-;; Author: Protesilaos Stavrou <info@protesilaos.com>
-;; Maintainer: Protesilaos Stavrou <info@protesilaos.com>
+;; Author: Morten Kjeldgaard <mok0@mailbox.org>
+;; Maintainer: Morten Kjeldgaard <mok0@mailbox.org>
 ;; URL: https://github.com/protesilaos/ef-themes
 ;; Keywords: faces, theme, accessibility
 
@@ -29,6 +29,9 @@
 ;; options for users who want something with a bit more flair than the
 ;; `modus-themes' (also designed by me).
 
+;; This is great for tweaking the color:
+;; https://snook.ca/technical/colour_contrast/colour.html
+
 ;;; Code:
 
 
@@ -53,29 +56,35 @@
     (red-warmer    "#cc1100")
     (red-cooler    "#fe5a7a")
     (red-faint     "#d56f72")
+
     (orange        "#ffa500")
     (orange-warmer "#cc8800")
     (orange-dark   "#c04e01")
+
     (green         "#0faa26")
     (green-warmer  "#6aad0f")
     (green-cooler  "#00a692")
     (green-faint   "#4a8e00")
     (green-light   "#24d8a5")
+
     (yellow        "#ffe523")
     (yellow-warmer "#ffd500")
     (yellow-cooler "#e4d00a")
-    (yellow-faint  "#ffe523")
+    (yellow-faint  "#ff7200")  ;; #ffab0a
     (yellow-dark   "#ffab0a")
+
     (blue          "#3f95f6")
     (blue-warmer   "#6a9fff")
     (blue-cooler   "#029fff")
     (blue-faint    "#7a94df")
     (blue-light    "#126a8a")
     (blue-dark     "#214761")
-    (magenta        "#d369af")
+
+    (magenta       "#d369af")
     (magenta-warmer "#e580ea")
     (magenta-cooler "#af85ff")
-    (magenta-faint  "#c58faf")
+    (magenta-faint "#c58faf")
+
     (cyan          "#78aaff")
     (cyan-warmer   "#00a1d7")
     (cyan-cooler   "#148691")
@@ -140,6 +149,15 @@
     (fg-code-rx-construct "#ef6360")
 
     (fg-prose-code "#178c6e")
+
+    (mail-cite-0    "#ff6000") ;; yellow-cooler
+    (mail-cite-1    "#3c65df") ;; blue-faint
+    (mail-cite-2    "#428000") ;; green-faint
+    (mail-cite-3    "#227882") ;; fg-dim
+    (mail-part      "#0f5dff") ;; cyan
+    (mail-recipient "#008a05") ;; green-warmer
+    (mail-subject   "#d47500") ;;yellow-faint
+    (mail-other     "#9c5100") ;;blue-warmer
     ))
 
 (defconst ef-smyx-light-palette-mappings-partial
@@ -197,6 +215,7 @@
     (prose-todo red)
     (fg-prose-verbatim blue-warmer)
 
+<<<<<<< HEAD
     (mail-cite-0 yellow-cooler)
     (mail-cite-1 blue-faint)
     (mail-cite-2 green-faint)
@@ -205,6 +224,25 @@
     (mail-recipient green-warmer)
     (mail-subject yellow-dark)
     (mail-other blue-warmer)
+||||||| parent of 85cd1c7 (Explicit colors for mail-*)
+    (mail-cite-0 yellow-cooler)
+    (mail-cite-1 blue-faint)
+    (mail-cite-2 green-faint)
+    (mail-cite-3 fg-dim)
+    (mail-part cyan)
+    (mail-recipient green-warmer)
+    (mail-subject yellow-faint)
+    (mail-other blue-warmer)
+=======
+    ;;(mail-cite-0 yellow-cooler)
+    ;; (mail-cite-1 blue-faint)
+    ;; (mail-cite-2 green-faint)
+    ;; (mail-cite-3 fg-dim)
+    ;; (mail-part cyan)
+    ;; (mail-recipient green-warmer)
+    ;; (mail-subject yellow-faint)
+    ;; (mail-other blue-warmer)
+>>>>>>> 85cd1c7 (Explicit colors for mail-*)
 
     (bg-search-static bg-warning)
     (bg-search-current bg-yellow-intense)
