@@ -215,25 +215,6 @@
     (prose-todo red)
     (fg-prose-verbatim blue-warmer)
 
-<<<<<<< HEAD
-    (mail-cite-0 yellow-cooler)
-    (mail-cite-1 blue-faint)
-    (mail-cite-2 green-faint)
-    (mail-cite-3 fg-dim)
-    (mail-part cyan)
-    (mail-recipient green-warmer)
-    (mail-subject yellow-dark)
-    (mail-other blue-warmer)
-||||||| parent of 85cd1c7 (Explicit colors for mail-*)
-    (mail-cite-0 yellow-cooler)
-    (mail-cite-1 blue-faint)
-    (mail-cite-2 green-faint)
-    (mail-cite-3 fg-dim)
-    (mail-part cyan)
-    (mail-recipient green-warmer)
-    (mail-subject yellow-faint)
-    (mail-other blue-warmer)
-=======
     ;;(mail-cite-0 yellow-cooler)
     ;; (mail-cite-1 blue-faint)
     ;; (mail-cite-2 green-faint)
@@ -242,7 +223,6 @@
     ;; (mail-recipient green-warmer)
     ;; (mail-subject yellow-faint)
     ;; (mail-other blue-warmer)
->>>>>>> 85cd1c7 (Explicit colors for mail-*)
 
     (bg-search-static bg-warning)
     (bg-search-current bg-yellow-intense)
