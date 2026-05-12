@@ -188,7 +188,7 @@
     (rx-construct fg-code-rx-construct)
 
     (accent-0 cyan)
-    (accent-1 orange)
+    (accent-1 orange-dark)
     (accent-2 green-warmer)
     (accent-3 magenta-cooler)
 
