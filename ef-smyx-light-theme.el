@@ -107,16 +107,19 @@
     (bg-added        "#a0e0a0")
     (bg-added-faint  "#c5ffa2")
     (bg-added-refine "#add0ad")
+    (bg-added-fringe "#add0ac")
     (fg-added        "#375e17")
 
     (bg-changed        "#efef80")
     (bg-changed-faint  "#ffe7a2")
     (bg-changed-refine "#ffffa8")
+    (bg-changed-fringe "#fafaa8")
     (fg-changed        "#363300")
 
     (bg-removed        "#ffbfbf")
     (bg-removed-faint  "#f9dadd")
     (bg-removed-refine "#f2c3c6")
+    (bg-removed-fringe "#f9c4c5")
     (fg-removed        "#c62b4e")
 
     (bg-mode-line-active "#2c6c12")
